@@ -25,33 +25,45 @@ section{
 }
 
 .row{
-	width:  100%;
+	width: 100%;
 	padding: 1rem 0;
 	min-height: 300px;
-	display: block;
-
+	display: flex;
+/* display:block */
 
 }
 
+.flex-container {
+	display:flex;
+	flex-direction: row;  /* Grundeintstellung */
+	justify-content: space-around; /* Grundeintstellung für x-achse */
+	align-items: stretch; /* Grundeintstellung für y-Achse*/
+
+}
 
 .col{
-	width: 100%;
+	/* width: 100%; */
 	min-width: 20px;
 	min-height: 50px;
 	margin: 10px;
+		/* flex-grow: 1 Standardwert: 0 */
 }
 
 .trolley-grey{
 	background: #7D7C84;
+	flex-grow: 1;
+	order: 1;
+
 }
 
 .sea-green{
 	background: #2D93AD;
-
+	flex-grow: 1
 }
 
 .middle-red{
 	background: #DE8F6E;
+	flex-grow: 2
 
 }
 
